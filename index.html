@@ -6,6 +6,10 @@
         <meta content="" name="description" />
         <meta content="" name="keywords" />
         <link type="text/css" href="styles.css" rel="stylesheet" />
+        <script type="Text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.sudoSlider.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+
     </head>
     <body>
         <div class="wrapper">
@@ -23,6 +27,9 @@
             <div class="page">
                 <div class ="header">
                     <div class="logo">
+                        <a href="#">
+                        <img alt="" src="img/logo.png">
+                        </a>
                         <div class="search">
                             <form method="GET" action="/search">
                             <input type="text"  value="" name="s" class="search-input"/>
@@ -34,57 +41,101 @@
                         <div class="football">
                         </div>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="#" class="active">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Our Work</a></li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
+
+
+
+
                     <div class="top">
                         <div class="roundabout">
                             <span class="title">
                                 Football Championat 2010 News
                             </span>
                             <div class="news">
-                                <div class="arrow arrow-left"></div>
-                                <div class="preview">
-                                <div class="all">
-                                <div class="event">
+                                <div class="preview" id="slider">
+                                <ul class="all">
+                                <li class="event">
                                     <a href="#">
                                         <img alt="" src="img/img4.gif">
                                         <span>
                                             The big prise for the winner
                                         </span>
                                     </a>
-                                </div>
-                                <div class="event">
+                                </li>
+                                <li class="event">
                                     <a href="#">
                                         <img alt="" src="img/img3.gif">
                                         <span>
                                             Japan will not play in the next...
                                         </span>
                                     </a>
-                                </div>
-                                <div class="event">
+                                </li>
+                                <li class="event">
                                     <a href="#">
                                         <img alt="" src="img/img2.gif">
                                         <span>
                                             Germany  variant of design
                                         </span>
                                     </a>
-                                </div>
-                                <div class="event">
+                                </li>
+                                <li class="event">
                                     <a href="#">
                                         <img alt="" src="img/img1.gif">
                                         <span>
                                             New colors in new design
                                         </span>
                                     </a>
+                                </li>
+
+                                <li class="event">
+                                    <a href="#">
+                                        <img alt="" src="img/img4.gif">
+                                        <span>
+                                            The big prise for the winner
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="event">
+                                    <a href="#">
+                                        <img alt="" src="img/img3.gif">
+                                        <span>
+                                            Japan will not play in the next...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="event">
+                                    <a href="#">
+                                        <img alt="" src="img/img2.gif">
+                                        <span>
+                                            Germany  variant of design
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="event">
+                                    <a href="#">
+                                        <img alt="" src="img/img1.gif">
+                                        <span>
+                                            New colors in new design
+                                        </span>
+                                    </a>
+                                </li>
+
+                        
+
+                                </ul>
                                 </div>
-                                </div>
-                                </div>
-                                <div class="arrow arrow-right-active"></div>
+
+<span id="controls-bg">
+    <span class="prevBtn arrow arrow-left" ></span>
+    <span class="nextBtn arrow arrow-right"></span>
+</span>
+
                             </div>
                         </div>
                     </div>
@@ -97,8 +148,10 @@
                             Championat
                         </div>
                         <div class="menu-shadow"></div>
-                    <div class="arrow menu-arrow arrow-up"></div>
-                    <div class="country">
+
+                    <div class="slid">
+
+                    <div class="country" id="slider2">
                     <ul>
                         <li>
                             <a href="#">
@@ -144,7 +197,15 @@
                         </li>
                     </ul>
                     </div>
-                    <div class="arrow menu-arrow arrow-down-active"></div>
+
+                    <span id="controls2-bg">
+                        <span class="prevBtn2 arrow arrow-up" style="display: block;"></span>
+                        <span class="nextBtn2 arrow arrow-down" ></span>
+                    </span>
+
+                    </div>
+
+
                     <div class="logo-menu">
                     </div>
                     </div>
@@ -215,7 +276,7 @@
                 </div>
                 <div class="footer-menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Our Work</a></li>

@@ -104,11 +104,8 @@ a {
 }
 
 .logo {
-	padding: 12px;
+	padding: 12px 12px  12px 50px;
 	height: 60px;
-	background-image: url('img/logo.png');
-	background-repeat: no-repeat;
-	background-position: 50px 10px;
 }
 
 .search {
@@ -175,6 +172,11 @@ a {
 	color: #FFFFFF;
 }
 
+.menu .active {
+	background-color: #7D0000;
+	color: #FFFFFF;
+}
+
 .football {
 	float: left;
 	margin-top: -20px;
@@ -194,18 +196,15 @@ a {
 	border-radius: 5px;
 	height: 290px;
 	background: url('img/bg-balls.png') no-repeat scroll 0 100% #FFFFFF;
-	padding: 10px 40px;
+	padding: 10px 15px;
 	box-shadow: 0px 2px 3px #888888;
 }
 
 .news {
-	width: 838px;
-	height: 239px;
-	background-color: #CEDEED;
-	border: 1px solid #CCCCCC; 
-	border-radius: 10px;
-	box-shadow: 0 2px 5px #8888AA inset;
-	padding-top: 9px;
+	height: 260px;
+	width: 100%;
+	position: absolute;
+	margin: 0 25px;
 }
 
 .roundabout span {
@@ -216,22 +215,35 @@ a {
 }
 
 .roundabout .title {
-	margin-left: 12px;
+	margin-left: 37px;
 }
 
 .preview {
-	height: 100%;
-	width: 100%;
+	height: 239px;
+	width: 838px;
+	background-color: #CEDEED;
+	border: 1px solid #CCCCCC; 
+	border-radius: 10px;
+	box-shadow: 0 2px 5px #8888AA inset;
+	padding-top: 9px;
 	float: left;
 	overflow: hidden;
 }
 
+#slider ul, #slider li, #slider2 ul, #slider2 li{
+    position:relative;
+    list-style:none;
+    display:block;
+}
+
 .preview .all {
-	width: 2000px;
 	height: 100%;
+	display: block;
+	width: 9000000px
 }
 
 .event {
+	display: block;
 	border: 1px solid #CCCCCC;
 	padding: 10px;
 	width: 160px;
@@ -245,20 +257,27 @@ a {
 	color: #81C5FF;
 }
 
-.news .arrow {
-	margin-top: 85px;
+.prevBtn, .nextBtn {
+	display: block;
+	position: absolute;
+	left: -25px;
+	top: 105px;
+	cursor: pointer;
 }
 
-.arrow-left, .arrow-left-active {
-	float: left;
-	margin-left: -25px; 
-} 
+.nextBtn {
+left: 848px;
+}
 
-.arrow-right, .arrow-right-active {
-	float: right;
-	margin-right: -25px; 
-} 
+#controls a{
+	z-index: 10;
+}
 
+
+#controls-bg span{
+	z-index: 1;
+	cursor: default;
+}
 
 .main {
 	padding: 0px 20px 25px 20px;
@@ -274,6 +293,7 @@ a {
 	float: left;
 	width: 240px;
 	letter-spacing: 1px;
+	position: absolute;
 }
 
 .main .right {
@@ -295,7 +315,7 @@ a {
 	background: url('img/shadow-menu-title.png') no-repeat scroll 50% 50%;
 	width: 100%;
 	height: 11px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .big-cup {
@@ -321,7 +341,7 @@ a {
 .cup-silver{ background-position: 0 -123px; } 
 
 .country {
-	margin: 5px 20px 10px 20px;
+	overflow: hidden;
 }
 
 .country ul li a{
@@ -330,6 +350,7 @@ a {
 	padding: 8px 33px;
 	font-size: 14px;
 	color: #888888;
+	width: 134px;
 }
 
 .country ul li a:HOVER{
@@ -357,6 +378,35 @@ a {
 	background: url('img/logo-menu.gif') no-repeat scroll 50% 50%;
 	height: 39px;
 	margin: 10px 0px;
+}
+
+.slid {
+ overflow: hidden;
+ padding:22px 20px 30px;
+ position: relative;
+}
+
+.prevBtn2, .nextBtn2 {
+	display: block;
+	position: absolute;
+	left: 90px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.prevBtn2 {
+	top: 0px;
+	margin-top: 0px;
+}
+
+#controls2 a{
+	z-index: 10;
+}
+
+
+#controls2-bg span{
+	z-index: 1;
+	cursor: default;
 }
 
 .right-title {
@@ -459,6 +509,11 @@ a {
 	text-decoration: underline;
 }
 
+.footer-menu .active{
+	color: #008AFF;
+	text-decoration: underline;
+}
+
 .footer {
 	background-color: #FFFFFF;
 	border-radius: 5px;
@@ -500,24 +555,10 @@ a {
 	border:0px;
 }
 
-.bg-ref {
-    
-}
-
-.bg-ref-active{  } 
-
-
 .arrow{
     background: url('img/arrows.png') no-repeat top left;
 }
 
-.arrow:HOVER{
-    cursor: pointer;
-}
-
-.menu-arrow {
-	margin: 0 93px;
-}
 
 .arrow-down-active{ background-position: 0 0; width: 56px; height: 19px; } 
 .arrow-down{ background-position: 0 -39px; width: 55px; height: 18px; } 
@@ -527,4 +568,3 @@ a {
 .arrow-right{ background-position: 0 -302px; width: 18px; height: 55px; } 
 .arrow-up-active{ background-position: 0 -377px; width: 55px; height: 18px; } 
 .arrow-up{ background-position: 0 -415px; width: 56px; height: 19px; } 
-
