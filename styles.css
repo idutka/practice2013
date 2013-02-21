@@ -108,6 +108,10 @@ a {
 	height: 60px;
 }
 
+.logo img {
+	float: left;
+}
+
 .search {
 	float:right;
 }
@@ -203,7 +207,7 @@ a {
 .news {
 	height: 260px;
 	width: 100%;
-	position: absolute;
+	position: relative;
 	margin: 0 25px;
 }
 
@@ -228,6 +232,7 @@ a {
 	padding-top: 9px;
 	float: left;
 	overflow: hidden;
+	position: relative;
 }
 
 #slider ul, #slider li, #slider2 ul, #slider2 li{
@@ -281,19 +286,21 @@ left: 848px;
 
 .main {
 	padding: 0px 20px 25px 20px;
-	min-height: 400px;
+	/*min-height: 400px;*/
+	overflow: hidden;
 }
 
 .content {
 	border-radius: 4px;
 	background: #FFFFFF;
+	position: relative;
 }
 
 .main .left {
 	float: left;
 	width: 240px;
 	letter-spacing: 1px;
-	position: absolute;
+	
 }
 
 .main .right {
@@ -360,8 +367,8 @@ left: 848px;
 
 .flag {
     background: url('img/flags.png') no-repeat top left;
-    float: right;
-    margin-right: -30px;
+    position: absolute;
+    right: 3px;
     margin-top: -3px;
     width: 24px;
     height: 23px;
@@ -435,7 +442,7 @@ left: 848px;
 	margin-left: -85px; 
 }
 
-.rules .flag {
+.rules .flag-big {
 	background: url('img/flag.png') no-repeat center center;
 }
 
@@ -561,10 +568,10 @@ left: 848px;
 
 
 .arrow-down-active{ background-position: 0 0; width: 56px; height: 19px; } 
-.arrow-down{ background-position: 0 -39px; width: 55px; height: 18px; } 
-.arrow-left-active{ background-position: 0 -77px; width: 18px; height: 55px; } 
-.arrow-left{ background-position: 0 -152px; width: 18px; height: 55px; } 
-.arrow-right-active{ background-position: 0 -227px; width: 18px; height: 55px; } 
-.arrow-right{ background-position: 0 -302px; width: 18px; height: 55px; } 
-.arrow-up-active{ background-position: 0 -377px; width: 55px; height: 18px; } 
-.arrow-up{ background-position: 0 -415px; width: 56px; height: 19px; } 
+.arrow-down{ background-position: 0 -38px; width: 55px; height: 19px; } 
+.arrow-left-active{ background-position: 0 -77px; width: 19px; height: 55px; } 
+.arrow-left{ background-position: 0 -152px; width: 19px; height: 55px; } 
+.arrow-right-active{ background-position: 0 -227px; width: 19px; height: 55px; } 
+.arrow-right{ background-position: 0 -302px; width: 19px; height: 55px; } 
+.arrow-up-active{ background-position: 0 -377px; width: 55px; height: 19px; } 
+.arrow-up{ background-position: 0 -416px; width: 56px; height: 19px; } 
