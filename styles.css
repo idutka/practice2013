@@ -212,7 +212,7 @@ a {
 	margin: 0 25px;
 }
 
-.roundabout span {
+.roundabout h1{
 	font-size: 30px;
 	font-weight: bold;
 	color: #BED4E7;
@@ -259,7 +259,7 @@ a {
 	float: left;
 }
 
-.event a:HOVER span{
+.event a:HOVER h1{
 	color: #81C5FF;
 }
 
@@ -463,6 +463,9 @@ left: 848px;
 
 .rules .title {
 	color: #CCCCFF;
+}
+
+.rules .title h2{
 	font-size: 20px;
 	font-weight: bold;
 	letter-spacing: 1px;
