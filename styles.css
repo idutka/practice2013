@@ -74,14 +74,14 @@ a {
 }
 
 .flag-l {
-	height: 20px;
-	width: 26px;
-	margin: 0 8px;
+	margin-left: 10px;
 	background: url('img/language-flag.png') no-repeat top left;
 }
 
-.language .active:HOVER {
-	cursor: pointer;
+.flag-l a{
+	height: 20px;
+	width: 26px;
+	display: block;
 }
 
 .fr:HOVER{ background-position: 0 0;} 
@@ -104,7 +104,7 @@ a {
 }
 
 .logo {
-	padding: 12px 12px  12px 50px;
+	padding: 12px 12px  12px 40px;
 	height: 60px;
 }
 
@@ -158,11 +158,12 @@ a {
 
 .menu ul li {
 	float: left;
-	padding-left: 22px;
+	padding-left: 17px;
 }
 
 .menu ul li a {
 	display: block;
+	letter-spacing: 1px;
 	height: 30px;
 	padding: 4px 10px 0px 10px;
 	font-size: 24px;
@@ -266,7 +267,7 @@ a {
 	display: block;
 	position: absolute;
 	left: -25px;
-	top: 105px;
+	top: 90px;
 	cursor: pointer;
 }
 
@@ -338,7 +339,7 @@ left: 848px;
     background: url('img/cups.png') no-repeat top left;
     position: absolute;
     margin-left: -25px;
-    margin-top: -3px;
+    margin-top: -4px;
     width: 15px; 
     height: 21px;
 }
@@ -349,15 +350,17 @@ left: 848px;
 
 .country {
 	overflow: hidden;
+	height: 186px;
+	position: relative;
 }
 
 .country ul li a{
 	display: block;
 	border-bottom: 1px solid #EEEEEE;
-	padding: 8px 33px;
+	padding: 8px 30px;
 	font-size: 14px;
 	color: #888888;
-	width: 134px;
+	width: 140px;
 }
 
 .country ul li a:HOVER{
@@ -369,7 +372,7 @@ left: 848px;
     background: url('img/flags.png') no-repeat top left;
     position: absolute;
     right: 3px;
-    margin-top: -3px;
+    margin-top: -5px;
     width: 24px;
     height: 23px;
 }
@@ -396,7 +399,7 @@ left: 848px;
 .prevBtn2, .nextBtn2 {
 	display: block;
 	position: absolute;
-	left: 90px;
+	left: 95px;
 	cursor: pointer;
 	margin-top: 10px;
 }
@@ -482,7 +485,7 @@ left: 848px;
 	background-position: 0 -44px; 
 	display: block;
 	height: 13px;
-	width: 190px;
+	width: 180px;
 	border-radius: 5px;
 	text-align: center;
 	font-size: 12px;
@@ -509,6 +512,7 @@ left: 848px;
 	float: left;
 	color: #3D6202;
 	font-size: 12px;
+
 }
 
 .footer-menu li a:HOVER{

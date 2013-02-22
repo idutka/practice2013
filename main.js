@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
         var sudoSlider2 = $("#slider2").sudoSlider({
-            slideCount:5,
+            slideCount:6,
             vertical: true,
             controlsattr: 'id="controls2"',
             prevhtml:'<a href="#" class="prevBtn2 arrow arrow-up-active"></a>', /* option[32]/*prevhtml*/
