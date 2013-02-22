@@ -6,9 +6,7 @@ $(document).ready(function(){
             autowidth: false,
             // continuous:true,
             prevhtml:'<a href="#" class="prevBtn arrow arrow-left-active"></a>', /* option[32]/*prevhtml*/
-            nexthtml:'<a href="#" class="nextBtn arrow arrow-right-active"></a>', /* option[33]/*nexthtml*/
-            
-
+            nexthtml:'<a href="#" class="nextBtn arrow arrow-right-active"></a>' /* option[33]/*nexthtml*/
         });
 
 
@@ -17,9 +15,7 @@ $(document).ready(function(){
             vertical: true,
             controlsattr: 'id="controls2"',
             prevhtml:'<a href="#" class="prevBtn2 arrow arrow-up-active"></a>', /* option[32]/*prevhtml*/
-            nexthtml:'<a href="#" class="nextBtn2 arrow arrow-down-active"></a>', /* option[33]/*nexthtml*/
-            
-
+            nexthtml:'<a href="#" class="nextBtn2 arrow arrow-down-active"></a>' /* option[33]/*nexthtml*/
         });
         
     });

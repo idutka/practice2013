@@ -75,26 +75,26 @@ a {
 
 .flag-l {
 	margin-left: 10px;
-	background: url('img/language-flag.png') no-repeat top left;
 }
 
 .flag-l a{
 	height: 20px;
 	width: 26px;
 	display: block;
+	background: url('img/language-flag.png') no-repeat top left;
 }
 
-.fr:HOVER{ background-position: 0 0;} 
-.gb:HOVER{ background-position: 0 -80px;} 
-.usa:HOVER{ background-position: 0 -160px;} 
+.fr a:HOVER{ background-position: 0 0;} 
+.gb a:HOVER{ background-position: 0 -80px;} 
+.usa a:HOVER{ background-position: 0 -160px;} 
 
 
-.fr-bw{ background-position: 0 0;} 
-.fr{ background-position: 0 -40px;} 
-.gb-bw{ background-position: 0 -80px;} 
-.gb{ background-position: 0 -120px;} 
-.usa-bw{ background-position: 0 -160px;} 
-.usa{ background-position: 0 -200px;} 
+.fr .active{ background-position: 0 0;} 
+.fr a{ background-position: 0 -40px;} 
+.gb .active{ background-position: 0 -80px;} 
+.gb a{ background-position: 0 -120px;} 
+.usa .active{ background-position: 0 -160px;} 
+.usa a{ background-position: 0 -200px;} 
 
 
 .page {
