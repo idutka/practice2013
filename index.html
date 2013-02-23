@@ -6,14 +6,15 @@
         <meta content="" name="description" />
         <meta content="" name="keywords" />
         <link type="text/css" href="styles.css" rel="stylesheet" />
-        <script type="Text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript" src="jquery.sudoSlider.js"></script>
-        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="js/jquery.mini.js"></script>
+        <!--  <script type="Text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+        <script type="text/javascript" src="js/jquery.sudoSlider.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 
     </head>
     <body>
-        <div class="wrapper">
-            <div class="language">
+        <div id="wrapper">
+            <div id="language">
                 <div class="flag-l gb">
                     <a href="#gb">
                     </a>
@@ -26,25 +27,25 @@
                     <a href="#usa" class="active">
                     </a>
                 </div>
-                <div>
+                <span>
                     Select your Languige
-                </div>
+                </span>
             </div>
-            <div class="page">
-                <div class ="header">
-                    <div class="logo">
+            <div id="page">
+                <div id ="header">
+                    <div id="logo">
                         <a href="#">
                         <img alt="" src="img/logo.png">
                         </a>
-                        <div class="search">
+                        <div id="search">
                             <form method="GET" action="/search">
                             <input type="text"  value="" name="s" class="search-input"/>
                             <input type="submit" value="Search" class="search-btn"/>
                             </form>
-                        </div>
-                    </div>
-                    <div class="menu">
-                        <div class="football">
+                        </div><!-- end search -->
+                    </div><!-- end logo -->
+                    <div id="menu">
+                        <div id="football">
                         </div>
                         <ul>
                             <li><a href="#" class="active">Home</a></li>
@@ -53,13 +54,13 @@
                             <li><a href="#">Our Work</a></li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
-                    </div>
+                    </div><!-- end menu -->
 
 
 
 
-                    <div class="top">
-                        <div class="roundabout">
+                    <div id="top">
+                        <div id="roundabout">
                             <h1 class="title">
                                 Football Championat 2010 News
                             </h1>
@@ -143,10 +144,10 @@
 </span>
 
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main">
+                        </div><!-- end roundabout -->
+                    </div><!-- end top -->
+                </div><!-- end header -->
+                <div id="main">
                     <div class="left content">
                         <div class="menu-title">
                             <span class="big-cup">
@@ -162,7 +163,9 @@
                         <li>
                             <a href="#">
                             <span class="cup cup-gold"></span>
+                            <span>
                             Ukraine
+                            </span>
                             <span class="flag flag-ua"></span>
                             </a>
                         </li>
@@ -221,13 +224,13 @@
 
                     <div class="logo-menu">
                     </div>
-                    </div>
+                    </div><!-- end left content -->
 
                     <div class="right content">
                         <div class="right-title">
                             New rules
                         </div>
-
+			    <div class="row">
                         <div class="rules">
                             <div class="images flag-big">
                             </div>
@@ -259,7 +262,8 @@
                             Read More
                             </a>
                         </div>
-
+                </div>
+                <div class="row">
                         <div class="rules">
                             <div class="images cards">
                             </div>
@@ -292,10 +296,10 @@
                             Read More
                             </a>
                         </div>
-
-                   </div>
-                </div>
-                <div class="footer-menu">
+                    </div>
+                   </div><!-- end right content -->
+                </div><!-- end main -->
+                <div id="footer-menu">
                     <ul>
                         <li><a href="#" class="active">Home</a></li>
                         <li><a href="#">About Us</a></li>
@@ -303,9 +307,9 @@
                         <li><a href="#">Our Work</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="footer">
+                </div><!-- end footer menu -->
+            </div><!-- end page -->
+            <div id="footer">
                 <div  class="reff">
                     <a href="#">
                         <img alt="" src="img/img1.png">
@@ -331,9 +335,9 @@
                 </div>
 
                 <div class="copyright">
-                    &copy 2001-2010 NewWebPick.com All rights reserved
+                    &copy; 2001-2010 NewWebPick.com All rights reserved
                 </div>
-            </div>
-        </div>
+            </div><!-- end footer -->
+        </div>   <!-- end wrapper -->
     </body>
 </html>

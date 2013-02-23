@@ -44,8 +44,8 @@ table {
 
 html,body {
 	font-family: Calibri, Corbel;
-	min-width: 900px;
 	width: 100%;
+	min-width: 960px;
 }
 
 body {
@@ -56,21 +56,29 @@ a {
 	text-decoration: none;
 }
 
-.wrapper {
+#wrapper {
 	margin: 0 auto;
 	width: 960px;
 }
 
-.language {
+#language {
 	padding: 10px 0;
 	height: 30px;
 }
 
-.language div{
+#language div {
 	float: right;
+	position: relative;
+}
+
+#language span {
 	color: #FFFFFF;
 	font-style:italic;
-	font-size: 18px;
+	font-size: 12px;
+	float: right;
+	width: 200px;
+	margin-top: 2px;
+	text-align: right;
 }
 
 .flag-l {
@@ -97,26 +105,26 @@ a {
 .usa a{ background-position: 0 -200px;} 
 
 
-.page {
+#page {
 	background-image: url('img/bg-wrapper.png');
 	border-radius: 5px;
 	padding-bottom: 30px;
 }
 
-.logo {
-	padding: 12px 12px  12px 40px;
-	height: 60px;
+#logo {
+	padding: 12px 12px  0px 40px;
+	height: 72px;
 }
 
-.logo img {
+#logo img {
 	float: left;
 }
 
-.search {
+#search {
 	float:right;
 }
 
-.search input{
+#search input {
 	border: 0px;
 	padding: 5px;
 	border-radius: 2px;
@@ -145,23 +153,24 @@ a {
 	cursor: pointer;
 }
 
-.menu {
-	padding: 20px 10px 30px 0px;
-	margin-bottom: -10px;
-	height: 30px;
+#menu {
+	position: relative;
+	height: 80px;
 	background-image: url('img/bg-menu.png');
 }
 
-.menu ul {
-	float: left;
+#menu ul {
+	position: absolute;
+	right: 30px;
+	top: 20px;
 }
 
-.menu ul li {
+#menu ul li {
 	float: left;
 	padding-left: 17px;
 }
 
-.menu ul li a {
+#menu ul li a {
 	display: block;
 	letter-spacing: 1px;
 	height: 30px;
@@ -172,19 +181,20 @@ a {
 	color: #7D0000;
 }
 
-.menu ul li a:HOVER {
+#menu ul li a:HOVER {
 	background-color: #7D0000;
 	color: #FFFFFF;
 }
 
-.menu .active {
+#menu .active {
 	background-color: #7D0000;
 	color: #FFFFFF;
 }
 
-.football {
-	float: left;
-	margin-top: -20px;
+#football {
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	background: url('img/balls.png');
 	background-repeat: no-repeat;
 	height: 70px;
@@ -192,11 +202,11 @@ a {
 }
 
 
-.top {
-	padding: 10px 20px 20px 20px;
+#top {
+	padding: 0px 20px 20px 20px;
 }
 
-.roundabout{
+#roundabout{
 	background-color: #FFFFFF;
 	border-radius: 5px;
 	height: 290px;
@@ -207,19 +217,18 @@ a {
 
 .news {
 	height: 260px;
-	width: 100%;
 	position: relative;
 	margin: 0 25px;
 }
 
-.roundabout h1{
+#roundabout h1{
 	font-size: 30px;
 	font-weight: bold;
 	color: #BED4E7;
 	letter-spacing: 1px;
 }
 
-.roundabout .title {
+#roundabout .title {
 	margin-left: 37px;
 }
 
@@ -243,7 +252,6 @@ a {
 }
 
 .preview .all {
-	height: 100%;
 	display: block;
 	width: 9000000px
 }
@@ -259,7 +267,7 @@ a {
 	float: left;
 }
 
-.event a:HOVER h1{
+#roundabout .event a:HOVER h1{
 	color: #81C5FF;
 }
 
@@ -285,7 +293,7 @@ left: 848px;
 	cursor: default;
 }
 
-.main {
+#main {
 	padding: 0px 20px 25px 20px;
 	/*min-height: 400px;*/
 	overflow: hidden;
@@ -297,16 +305,20 @@ left: 848px;
 	position: relative;
 }
 
-.main .left {
+#main .left {
 	float: left;
 	width: 240px;
 	letter-spacing: 1px;
 	
 }
 
-.main .right {
+#main .right {
 	padding: 20px 0px;
-	margin-left: 260px;
+	float: right;
+	overflow: hidden;
+}
+
+.row {
 	overflow: hidden;
 }
 
@@ -336,13 +348,15 @@ left: 848px;
 }
 
 .cup{
-    background: url('img/cups.png') no-repeat top left;
+    background-image: url('img/cups.png');
     position: absolute;
-    margin-left: -25px;
-    margin-top: -4px;
+    left: 5px;
+    top: 4px;
     width: 15px; 
     height: 21px;
+    display: block;
 }
+
 .cup-bronze{ background-position: 0 0; } 
 .cup-gold{ background-position: 0 -41px; } 
 .cup-other{ background-position: 0 -82px; } 
@@ -356,6 +370,7 @@ left: 848px;
 
 .country ul li a{
 	display: block;
+	position: relative;
 	border-bottom: 1px solid #EEEEEE;
 	padding: 8px 30px;
 	font-size: 14px;
@@ -365,14 +380,14 @@ left: 848px;
 
 .country ul li a:HOVER{
 	color: #008AFF;
-	background: #EBF6FF;
+	background-color: #EBF6FF;
 }
 
 .flag {
     background: url('img/flags.png') no-repeat top left;
     position: absolute;
     right: 3px;
-    margin-top: -5px;
+    top: 3px;
     width: 24px;
     height: 23px;
 }
@@ -380,7 +395,7 @@ left: 848px;
 .flag-ago{ background-position: 0 0; } 
 .flag-fr{ background-position: 0 -44px; } 
 .flag-ro{ background-position: 0 -88px; } 
-.flag-ru{ background-position: 0 -132px; } 
+.flag-ru{ background-position: 0 -130px; } 
 .flag-ua{ background-position: 0 -171px; } 
 
 .logo-menu {
@@ -426,7 +441,6 @@ left: 848px;
 	font-weight: bold;
 	padding: 3px 20px;
 	width: 280px;
-	font-weight: bold;
 	letter-spacing: 1px;
 }
 
@@ -435,7 +449,6 @@ left: 848px;
 	width: 200px;
 	padding: 20px 30px 10px 100px;
 	position: relative;
-	overflow: hidden;
 }
 
 .rules .images {
@@ -482,6 +495,7 @@ left: 848px;
 	font-family: Arial;
 	line-height: 18px;
 }
+
 .wiev-rule {
 	padding: 5px;
 	background: url('img/bg-btn-green.png');
@@ -501,34 +515,34 @@ left: 848px;
  } 
 
 
-.footer-menu {
+#footer-menu {
 	float: right;
 	padding-right: 15px;
 }
 
-.footer-menu li {
+#footer-menu li {
 	float: left;
 	margin: 0 10px;
 }
 
-.footer-menu ul li a{
+#footer-menu ul li a{
 	float: left;
 	color: #3D6202;
 	font-size: 12px;
 
 }
 
-.footer-menu li a:HOVER{
+#footer-menu li a:HOVER{
 	color: #008AFF;
 	text-decoration: underline;
 }
 
-.footer-menu .active{
+#footer-menu .active{
 	color: #008AFF;
 	text-decoration: underline;
 }
 
-.footer {
+#footer {
 	background-color: #FFFFFF;
 	border-radius: 5px;
 	margin: 20px 0 40px 0;
@@ -572,7 +586,6 @@ left: 848px;
 .arrow{
     background: url('img/arrows.png') no-repeat top left;
 }
-
 
 .arrow-down-active{ background-position: 0 0; width: 56px; height: 19px; } 
 .arrow-down{ background-position: 0 -38px; width: 55px; height: 19px; } 
