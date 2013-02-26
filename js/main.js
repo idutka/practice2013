@@ -18,17 +18,20 @@ $(document).ready(function(){
         //     nexthtml:'<a href="#" class="nextBtn2 arrow arrow-down-active"></a>' /* option[33]/*nexthtml*/
         // });
 
-  var myslider = new slider();
+    var myslider = new slider();
 
-function slider () {
+    function slider () {
 
         var slider = $("#slider");  // Set slider
         var controls = $("#controls-bg"); // Set  controls
+        var buttons = $("#buttons"); // Set  buttons
 
         var box = slider.children();  
 
         var prev = controls.children().eq(0); // button PREV
         var next = controls.children().eq(1); // button NEXT 
+
+        var button = "<span>#</span>";
         
         
         var widthElements = box.children().outerWidth(true);
@@ -38,12 +41,15 @@ function slider () {
         var moveCount = 1;
          
 
-        slider.css( "width", numberViewElements*widthElements-10 );
+        // slider.css( "width", numberViewElements*widthElements);
         drawArrows();
+        drawButton();
 
         next.click(function () {
-            if(ViewElement < (numberElements - numberViewElements)){
-                ViewElement += moveCount; ;
+            var n = numberElements - numberViewElements;
+            if(ViewElement < n){
+                ViewElement += moveCount; 
+                if (ViewElement > n) { ViewElement = n};
                 setLeft()
             }
         })
@@ -51,9 +57,17 @@ function slider () {
         prev.click(function () {
             if(ViewElement > 0){
                 ViewElement -= moveCount ;
+                if (ViewElement < 0) { ViewElement = 0};
                 setLeft()
             }
         })
+
+        buttons.children().each(function(i){
+                $(this).click(function(){
+                    ViewElement = i;
+                    setLeft();
+                });
+            });
 
         function setLeft () {
             var p = ViewElement*widthElements;
@@ -78,8 +92,17 @@ function slider () {
             }else{
                 next.removeClass("arrow-right").addClass("arrow-right-active");
             }
-            
         }
+
+        function drawButton () {
+
+            for (var i = 0; i <= (numberElements - numberViewElements); i++) {
+                buttons.append(button);
+            };
+        }
+
+               
+
 
 }
 

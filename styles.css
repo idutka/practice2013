@@ -253,7 +253,8 @@ a {
 
 .preview .all {
 	display: block;
-	width: 9000000px
+	width: 9000000px;
+	margin-left: -5px;
 }
 
 .event {
@@ -263,7 +264,7 @@ a {
 	width: 160px;
 	height: 208px;
 	background-color: #FFFFFF;
-	margin: 0 20px 0 10px;
+	margin: 0 15px 0 15px;
 	float: left;
 }
 
@@ -287,10 +288,23 @@ left: 848px;
 	z-index: 10;
 }
 
-
 #controls-bg span{
 	z-index: 1;
 }
+
+#buttons span{
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+#buttons .active{
+	color: #FF6600;
+}
+
+#buttons span:HOVER{
+	color: #FF6600;
+}
+
 
 #main {
 	padding: 0px 20px 25px 20px;
