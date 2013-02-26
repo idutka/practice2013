@@ -92,16 +92,11 @@ a {
 	background: url('img/language-flag.png') no-repeat top left;
 }
 
-.fr a:HOVER{ background-position: 0 0;} 
-.gb a:HOVER{ background-position: 0 -80px;} 
-.usa a:HOVER{ background-position: 0 -160px;} 
-
-
-.fr .active{ background-position: 0 0;} 
+.fr .active, .fr a:HOVER{ background-position: 0 0;} 
 .fr a{ background-position: 0 -40px;} 
-.gb .active{ background-position: 0 -80px;} 
+.gb .active, .gb a:HOVER{ background-position: 0 -80px;} 
 .gb a{ background-position: 0 -120px;} 
-.usa .active{ background-position: 0 -160px;} 
+.usa .active, .usa a:HOVER{ background-position: 0 -160px;} 
 .usa a{ background-position: 0 -200px;} 
 
 
@@ -181,12 +176,7 @@ a {
 	color: #7D0000;
 }
 
-#menu ul li a:HOVER {
-	background-color: #7D0000;
-	color: #FFFFFF;
-}
-
-#menu .active {
+#menu .active, #menu ul li a:HOVER {
 	background-color: #7D0000;
 	color: #FFFFFF;
 }
@@ -288,20 +278,12 @@ left: 848px;
 	z-index: 10;
 }
 
-#controls-bg span{
-	z-index: 1;
-}
-
 #buttons span{
 	margin: 0 10px;
 	cursor: pointer;
 }
 
-#buttons .active{
-	color: #FF6600;
-}
-
-#buttons span:HOVER{
+#buttons .active, #buttons span:HOVER{
 	color: #FF6600;
 }
 
@@ -441,11 +423,6 @@ left: 848px;
 	z-index: 10;
 }
 
-
-#controls2-bg span{
-	z-index: 1;
-	cursor: default;
-}
 
 .right-title {
 	background-color: #BED4E7;
@@ -600,11 +577,15 @@ left: 848px;
     background: url('img/arrows.png') no-repeat top left;
 }
 
-.arrow-down-active{ background-position: 0 0; width: 56px; height: 19px; } 
+
 .arrow-down{ background-position: 0 -38px; width: 55px; height: 19px; } 
-.arrow-left-active{ background-position: 0 -77px; width: 19px; height: 55px; } 
+.arrow-down.active{ background-position: 0 0; width: 56px; height: 19px; } 
+
 .arrow-left{ background-position: 0 -152px; width: 19px; height: 55px; } 
-.arrow-right-active{ background-position: 0 -227px; width: 19px; height: 55px; } 
+.arrow-left.active{ background-position: 0 -77px; width: 19px; height: 55px; } 
+
 .arrow-right{ background-position: 0 -302px; width: 19px; height: 55px; } 
-.arrow-up-active{ background-position: 0 -377px; width: 55px; height: 19px; } 
+.arrow-right.active{ background-position: 0 -227px; width: 19px; height: 55px; }
+
 .arrow-up{ background-position: 0 -416px; width: 56px; height: 19px; } 
+.arrow-up.active{ background-position: 0 -377px; width: 55px; height: 19px; } 
